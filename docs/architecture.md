@@ -31,40 +31,6 @@ flowchart LR
     M -. orchestrates .-> D
     M -. orchestrates .-> H
     M -. orchestrates .-> L
-cat > docs/architecture.md <<'EOF'
-# GLEIF Lakehouse Architecture
-
-## Overview
-
-This project implements a small but complete Databricks lakehouse workflow
-using Python, pandas, PySpark, Spark SQL, Delta Lake, and Lakeflow Jobs.
-
-The architecture separates raw ingestion, trusted transformation,
-business-ready analytics, and operational auditing.
-
-```mermaid
-flowchart LR
-    A[GLEIF CSV Source] --> B[Bronze Ingestion]
-    B --> C[(bronze_gleif_entities)]
-
-    C --> D[Silver Transformation]
-    D --> E[(silver_gleif_entities)]
-    D --> F[(quarantine)]
-    D --> G[(duplicate audit)]
-
-    E --> H[Gold Analytics]
-    H --> I[(entity reporting)]
-    H --> J[(status summary)]
-    H --> K[(quality metrics)]
-
-    I --> L[Delta History Audit]
-    J --> L
-    K --> L
-
-    M[Lakeflow Job] -. orchestrates .-> B
-    M -. orchestrates .-> D
-    M -. orchestrates .-> H
-    M -. orchestrates .-> L
 ```
 
 ## Technology Responsibilities
