@@ -1,0 +1,10 @@
+report_month,party_id,gross_exposure_usd,exception_count,submission_status,analyst_name,source_updated_at
+2026-06-30,P1001,1250000,0,Completed,Jordan Lee,2026-07-01T06:00:00Z
+2026-06-30,P1002,750000,1,Completed,Sam Patel,2026-07-01T06:05:00Z
+2026-06-30,P1003,980000,2,Pending,Avery Chen,2026-07-01T06:10:00Z
+2026-06-30,P1003,990000,1,Completed,Avery Chen,2026-07-01T07:15:00Z
+2026-06-30,P1004,1500000,0,Completed,Jordan Lee,2026-07-01T06:20:00Z
+2026-06-30,P1005,400000,3,Completed,Sam Patel,2026-07-01T06:25:00Z
+2026-06-30,P1006,120000,1,Completed,Avery Chen,2026-07-01T06:30:00Z
+2026-06-30,P1007,250000,2,Completed,Jordan Lee,2026-07-01T06:35:00Z
+2026-06-30,P9999,300000,1,Completed,Jordan Lee,2026-07-01T06:40:00Z
