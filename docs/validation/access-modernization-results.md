@@ -123,6 +123,10 @@ Instead, it separates the workflow into:
 
 This retains the original business purpose while improving governance, traceability, scalability, and operational visibility.
 
-## Interview summary
+## What This Demonstrates
 
-To prepare for the opportunity, I created a representative prototype translating the kinds of Access workflows I previously supported into Databricks and Lakeflow patterns. I ingested Access-style exports into Bronze Delta tables, applied validation, deduplication, referential-integrity, and exception-handling rules in Silver, and produced Power BI-ready reporting outputs in Gold. I then orchestrated the notebooks as a dependent Lakeflow Jobs pipeline and validated row-level reconciliation and run observability.
+This representative prototype translates legacy Microsoft Access-style operational reporting workflows into Databricks and Lakeflow patterns. It ingests representative exports into Bronze Delta tables; applies validation, deduplication, referential-integrity, quarantine, and exception-handling rules in Silver; and produces Power BI-ready reporting outputs in Gold. The dependent notebooks are orchestrated through Lakeflow Jobs, with row-level reconciliation, task dependencies, and run observability validated across the pipeline.
+
+## Downstream Reporting Validation
+
+- [Power BI dashboard validation](power-bi-results.md)

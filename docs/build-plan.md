@@ -1,5 +1,7 @@
 # Databricks GLEIF Lakehouse Build Plan
 
+**Status:** Completed. This document preserves the original implementation plan and milestone structure.
+
 ## Objective
 
 Build a practical Databricks and PySpark lakehouse pipeline using controlled GLEIF reference data.
@@ -45,4 +47,4 @@ The project will demonstrate:
 - Validation results
 - Screenshots of successful execution
 - Transformation and data-dictionary documentation
-- Interview-ready project summary
+- Professional project summary

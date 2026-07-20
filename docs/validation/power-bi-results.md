@@ -70,7 +70,7 @@ That relationship was removed intentionally.
 
 gold_analyst_summary is an aggregated reporting output, not a true analyst dimension. Connecting it directly to the party-detail table could create ambiguous filtering or double-counting.
 
-The Gold outputs remain disconnected so each visual operates at the table's intended reporting grain.
+For this validation-focused prototype, the Gold outputs remain disconnected so each visual operates at its intended reporting grain. A broader production semantic model could introduce conformed analyst, party, and date dimensions when coordinated cross-filtering is required.
 
 ## DAX Measures
 
@@ -185,7 +185,7 @@ Power BI results match the validated Databricks Gold outputs:
 
 The working Power BI Desktop report is stored at:
 
-`power-bi/access-modernization-dashboard.pbix`
+[Download the Power BI Desktop report](../../power-bi/access-modernization-dashboard.pbix)
 
 ## Modernization Significance
 
@@ -201,6 +201,6 @@ The preferred modernization pattern is:
 
 Access baseline → Databricks replacement → parallel Power BI validation → Gold-table cutover
 
-## Interview Summary
+## What This Demonstrates
 
-To prepare for this opportunity, I created a representative prototype that translates the kinds of Access workflows I supported into Databricks, Lakeflow, and Power BI patterns. I validated the business rules in Databricks Gold tables, created explicit DAX measures, removed an inappropriate auto-generated relationship, and confirmed that Power BI could refresh directly from the Databricks SQL warehouse.
+This representative prototype extends the Databricks Access-modernization workflow into a refreshable Power BI reporting layer. It validates Gold-layer business rules through explicit DAX measures, preserves each reporting table at its intended grain, removes an inappropriate auto-generated relationship, reconciles dashboard results to the Databricks Gold totals, and confirms that Power BI can refresh through the Databricks SQL warehouse using OAuth.

@@ -70,10 +70,9 @@ First identify:
 
 The implementation can then be simplified into governed, reusable components.
 
-## Interview Translation
+## Legacy-to-Cloud Translation
 
-I would begin by inventorying the Access tables, queries, macros, VBA
-procedures, schedules, controls, and report outputs. I would then separate
+A practical modernization effort begins by inventorying the Access tables, queries, macros, VBA procedures, schedules, controls, and report outputs. I would then separate
 source ingestion, transformation, exception handling, and reporting into
 Bronze, Silver, and Gold layers. Business rules would move into tested SQL or
 PySpark transformations, orchestration would move into Lakeflow Jobs, and
